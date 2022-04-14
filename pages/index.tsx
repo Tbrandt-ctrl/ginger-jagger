@@ -3,7 +3,8 @@ import Head from "next/head";
 
 import styles from "@/styles/pages/Home/Home.module.scss";
 
-import TextOverlay from "@/components/pages/home/TextOverlay/TextOverlay";
+import TextOverlay from "@/components/pages/home/TextOverlay";
+import ImageGallery from "@/components/pages/home/ImageGallery";
 
 const Home: NextPage = () => {
   return (
@@ -14,9 +15,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={`relative min-h-full ${styles.main}`}>
         <TextOverlay />
-        <h1>Ready to start</h1>
+
+        <ImageGallery />
       </main>
     </>
   );

@@ -10,7 +10,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="header w-100 h-10 flex justify-between items-center p-7">
+    <div className="fixed top-0 left-0 header w-full h-10 flex justify-between items-center p-7">
       <nav>
         <ul className="flex flex-row gap-3">
           {link_items.map((link) => {
